@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset = "utf-8">
-    <title> Pattrn Party </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel = 'stylesheet' href = './css/styles.css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
-  </head>
-  
-  <body>
-    <header class = main-header>
-      <div class = "logo">
-        <span class = "accent"> PATTRN </span> PARTY
-      </div>
-      <div class = "name">
-        Maria St. Louis-Sanchez
-      </div>
-    </header>
-    <section class = "main">
-      <article class = "tabs">
-        <header class = "article-head">
-          ACCORDION TABS
-          <div class = "article-line">
-          </div>
-        </header>
-        <div class = "main-article-content">
-         
-            <ul class="accordion-tabs">
-              <li class="tab-link"> <a href = "#tab-1"> Tab 1 </a> </li>
-              <li class="tab-link active"> <a href = "#tab-2"> Tab 2 </a></li>
-              <li class="tab-link"><a href = "#tab-3"> Tab Three </a></li>
-              <li class="tab-link"><a href = "#tab-4"> Tab Four</a></li>
-            </ul>
+<head>
+  <meta charset = "utf-8">
+  <title> Pattrn Party </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = 'stylesheet' href = './css/styles.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+</head>
+
+<body>
+  <header class = main-header>
+    <div class = "logo">
+      <span class = "accent"> PATTRN </span> PARTY
+    </div>
+    <div class = "name">
+      Maria St. Louis-Sanchez
+    </div>
+  </header>
+  <section class = "main">
+    <article class = "tabs">
+      <header class = "article-head">
+        ACCORDION TABS
+        <div class = "article-line">
+        </div>
+      </header>
+      <div class = "main-article-content">
+
+        <ul class="accordion-tabs">
+          <li class = "tab-head head-1"> <a href = "#tab-1" class="tab-link"> Tab 1 </a> 
             <div id="tab-1" class="tab-content">
              Tab 1 content
-            </div>
-            <div id="tab-2" class="tab-content active">
-              Tab 2 content
-            </div>
-            <div id="tab-3" class="tab-content">
-             Tab 3 content
-            </div>
-            <div id="tab-4" class="tab-content">
-              Tab 4 content
-            </div>
+           </div>
+         </li>
+         <li class ="active tab-head head-2"> <a href = "#tab-2" class="tab-link"> Tab 2 </a>
+           <div id="tab-2" class="tab-content active">
+            Tab 2 content
+          </div>
+
+        </li>
+        <li class = "tab-head head-3"><a href = "#tab-3" class="tab-link"> Tab Three </a>
+         <div id="tab-3" class="tab-content">
+           Tab 3 content
+         </div>
+
+       </li>
+       <li class = "tab-head head-4"><a href = "#tab-4" class="tab-link"> Tab Four</a>
+        <div id="tab-4" class="tab-content">
+          Tab 4 content
         </div>
-      </article>
 
-    </section>
+      </li>
+    </ul>
 
-    <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 
-  <script src = './js/script.js'> </script>
-  </body>
+
+
+  </div>
+</article>
+
+</section>
+
+<script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<script src = './js/script.js'> </script>
+</body>
 
 
 </html>
