@@ -27,11 +27,6 @@ h3 {
   color: #444;
 }
 
-h2 {
-  color: #909090;
-  font-size: 15px;
-}
-
 .main-header {
   background: #3F3244;
   display:flex;
@@ -90,17 +85,22 @@ h2 {
   flex-direction: column;
 }
 
+.tab-link.active {
+  color: #909090;
+  font-size: 17px;
+}
+
 .tab-link {
   text-decoration: none;
   width: 90px;
-  color: #444;
+  color: #b9b9b9;
 }
 
 .tab-content {
   background: #fff;
   display: none;
-  margin-left: -2px;
-  margin-top: -2px;
+  margin-left: -3px;
+  margin-top: 1px;
   padding: 15px;
   position: absolute;
   top: 44px;
