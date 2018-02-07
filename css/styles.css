@@ -173,6 +173,18 @@ a.see-code-btn {
   height: 200px;
 }
 
+.tab-text {
+  color: black;
+  font-size: 17px;
+}
+
+.plus-minus {
+  float: right;
+  font-size: 20px;
+  font-weight: 600;
+  display: none;
+}
+
 @media screen and (max-width: 825px) {
   .article-head {
     align-items: center;
@@ -209,9 +221,12 @@ a.see-code-btn {
     margin-left: 0px;
   }
 
-
   .accordion-tabs li{
     border-bottom: none;
+  }
+
+  .plus-minus {
+    display: block;
   }
 }
 

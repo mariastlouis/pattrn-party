@@ -1,6 +1,7 @@
 
 function setTab () {
   let tabId = $(this).children().attr('href');
+  let liId = $(this).attr('id')
   let tabLink = $(this).children();
   $('li').removeClass( 'active' )
   $('div').removeClass('active')
@@ -8,6 +9,8 @@ function setTab () {
   $(this).addClass('active')
   $(tabId).addClass('active')
   $(tabLink).addClass('active')
+  $('.plus-minus').text('+')
+  $(`.plus-minus-${liId}`).text('-')
 }
 
 
