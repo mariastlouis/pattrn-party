@@ -1,61 +1,115 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset = "utf-8">
-    <title> Pattrn Party </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel = 'stylesheet' href = './css/styles.css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
-  </head>
-  
-  <body>
-    <header class = main-header>
-      <div class = "logo">
-        <span class = "accent"> PATTRN </span> PARTY
-      </div>
-      <div class = "name">
-        Maria St. Louis-Sanchez
-      </div>
-    </header>
-    <section class = "main">
-      <article class = "tabs">
-        <header class = "article-head">
-          ACCORDION TABS
-          <div class = "article-line">
-          </div>
-        </header>
-        <div class = "main-article-content">
-         
-            <ul class="accordion-tabs">
-              <li class="tab-link"> <a href = "#tab-1"> Tab 1 </a> </li>
-              <li class="tab-link active"> <a href = "#tab-2"> Tab 2 </a></li>
-              <li class="tab-link"><a href = "#tab-3"> Tab Three </a></li>
-              <li class="tab-link"><a href = "#tab-4"> Tab Four</a></li>
-            </ul>
-            <div id="tab-1" class="tab-content">
-             Tab 1 content
-            </div>
-            <div id="tab-2" class="tab-content active">
-              Tab 2 content
-            </div>
-            <div id="tab-3" class="tab-content">
-             Tab 3 content
-            </div>
-            <div id="tab-4" class="tab-content">
-              Tab 4 content
-            </div>
+<head>
+  <meta charset = "utf-8">
+  <title> Pattrn Party </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = 'stylesheet' href = './css/styles.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+</head>
+
+<body>
+  <header class = main-header>
+    <div class = "logo">
+      <span class = "accent"> PATTRN </span> PARTY
+    </div>
+    <div class = "name">
+      Maria St. Louis-Sanchez
+    </div>
+  </header>
+  <section class = "main">
+    <article class = "tabs">
+      <header class = "article-head">
+        ACCORDION TABS
+        <div class = "article-line article-head">
         </div>
-      </article>
+      </header>
+      <div class = "main-article-content">
+        <ul class="accordion-tabs">
+          <li class = "tab-head head-1 active" id ="one"> <a href = "#tab-1" class="tab-link active">
+             Tab 1 <span class = "plus-minus plus-minus-one"> + </span> </a> 
+            <div id="tab-1" class="tab-content active">
+             <div class = "tab-img">
+                <img src = "images/accordionImg.png" class= "img-tag"/>
+              </div>
+              <div class = "tab-text">
+                <h3> Tug stay squirrel great </h3>
+                <div class = "article-line tab-line"> </div>
+                <p>Jump english mastiff kibbles bite, k9 kibbles poodle peanut butter bring it take it. Husky k9 bite tug yorkshire terrier stand release, collar sit yorkshire terrier boxer bring it come lab. Tug stay squirrel great dance dog bone tennis ball peanut butter.</p>
 
-    </section>
+                <p>Collar come greyhound bell sit play dead, spin husky lap dog dachshund. Leash down sit husky bite play dead, bring it fetch milk bone pug. Leash leash boxer kong, speak fetch vet fetch poodle rottweiler.</p>
 
-    <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 
-  <script src = './js/script.js'> </script>
-  </body>
+              </div>
+           </div>
+         </li>
+         <li class ="tab-head head-2" id="two">
+          
+            <a href = "#tab-2" class="tab-link">Tab 2 <span class = "plus-minus plus-minus-two"> + </span>  </a>
+          <div id="tab-2" class="tab-content">
+            <div class = "tab-img">
+                <img src = "images/accordionImg.png" class= "img-tag"/>
+            </div>
+            <div class = "tab-text">
+              <h3> Collar sit yorkshire </h3>
+              <div class = "article-line tab-line"> </div>
+              <p>Jump english mastiff kibbles bite, k9 kibbles poodle peanut butter bring it take it. Husky k9 bite tug yorkshire terrier stand release, collar sit yorkshire terrier boxer bring it come lab. Tug stay squirrel great dance dog bone tennis ball peanut butter.</p>
+
+              <p>Collar come greyhound bell sit play dead, spin husky lap dog dachshund. Leash down sit husky bite play dead, bring it fetch milk bone pug. Leash leash boxer kong, speak fetch vet fetch poodle rottweiler.</p>
+            </div>  
+          </div>
+
+        </li>
+        <li class = "tab-head head-3" id = "three"><a href = "#tab-3" class="tab-link"> Tab 3 <span class = "plus-minus plus-minus-three"> + </span> </a>
+         <div id="tab-3" class="tab-content">
+            <div class = "tab-img">
+                <img src = "images/accordionImg.png" class= "img-tag"/>
+              </div>
+              <div class = "tab-text">
+                <h3> Lap dog dachshund</h3>
+                <div class = "article-line tab-line"> </div>
+                <p>Jump english mastiff kibbles bite, k9 kibbles poodle peanut butter bring it take it. Husky k9 bite tug yorkshire terrier stand release, collar sit yorkshire terrier boxer bring it come lab. Tug stay squirrel great dance dog bone tennis ball peanut butter.</p>
+
+                <p>Collar come greyhound bell sit play dead, spin husky lap dog dachshund. Leash down sit husky bite play dead, bring it fetch milk bone pug. Leash leash boxer kong, speak fetch vet fetch poodle rottweiler.</p>
+              </div>
+         </div>
+
+       </li>
+       <li class = "tab-head head-4" id = "four"><a href = "#tab-4" class="tab-link">  Tab 4 <span class = "plus-minus plus-minus-four"> + </span> </a>
+        <div id="tab-4" class="tab-content">
+           <div class = "tab-img">
+                <img src = "images/accordionImg.png" class= "img-tag"/>
+              </div>
+              <div class = "tab-text">
+                <h3> Spin husky lap </h3>
+                <div class = "article-line tab-line"> </div>
+                <p>Jump english mastiff kibbles bite, k9 kibbles poodle peanut butter bring it take it. Husky k9 bite tug yorkshire terrier stand release, collar sit yorkshire terrier boxer bring it come lab. Tug stay squirrel great dance dog bone tennis ball peanut butter.</p>
+
+                <p>Collar come greyhound bell sit play dead, spin husky lap dog dachshund. Leash down sit husky bite play dead, bring it fetch milk bone pug. Leash leash boxer kong, speak fetch vet fetch poodle rottweiler.</p>
+              </div>
+        </div>
+
+      </li>
+    </ul>
+     </div>
+   
+
+ 
+</article>
+<div class = "button-space"> </div>
+ <div class="code-button">
+      <a href = "https://codepen.io/mariastlouis/pen/ZrpwLw" class = "see-code-btn"> View code </a>
+    </div>
+
+</section>
+
+<script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<script src = './js/script.js'> </script>
+</body>
 
 
 </html>
