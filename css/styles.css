@@ -186,6 +186,11 @@ a.see-code-btn {
 }
 
 @media screen and (max-width: 825px) {
+  .main-header {
+    flex-direction: column;
+    align-items:center;
+  }
+
   .article-head {
     align-items: center;
     flex-direction: column;
@@ -228,6 +233,14 @@ a.see-code-btn {
   .plus-minus {
     display: block;
   }
+
+  .code-button {
+  margin-top: 0;
+}
+  .button-space {
+  display: none;
+}
+
 }
 
 @media screen and (max-width: 500px) {
