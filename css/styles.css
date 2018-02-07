@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-ul, menu, dir {
+ul, menu, dir, h2 {
   display: block;
   list-style-type: disc;
   -webkit-margin-before: 0em;
@@ -19,6 +19,17 @@ ul, menu, dir {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 00px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 17px;
+  color: #444;
+}
+
+h2 {
+  color: #909090;
+  font-size: 15px;
 }
 
 .main-header {
@@ -45,26 +56,27 @@ ul, menu, dir {
   padding: 20px;
 }
 
-.article-line {
+.article-line.article-head {
   border-bottom: 1px solid #D1D2D3;
   margin-bottom: 10px;
   margin-left: 5px;
-  width: 80%;
+  width: 77%;
 }
 
 .article-head {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
 }
-
 
 
 /*tab styles*/
 
 .main-article-content {
   width: 100%;
+  display:flex;
+  justify-content: center;
 }
 .accordion-tabs {
   list-style: none;
@@ -81,20 +93,28 @@ ul, menu, dir {
 .tab-link {
   text-decoration: none;
   width: 90px;
+  color: #444;
 }
-
-/*.tab-head {
-  width: 192px;
-}*/
 
 .tab-content {
   background: #fff;
   display: none;
+  margin-left: -2px;
+  margin-top: -2px;
   padding: 15px;
   position: absolute;
   top: 44px;
   left: 0px;
-  width: 780px;
+  width: 774px;
+
+}
+
+.tab-content.active {
+  background: #fff;
+  border: 1px solid #D1D2D3;
+  border-top: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .accordion-tabs li.active{
@@ -103,41 +123,75 @@ ul, menu, dir {
   border-bottom: none;
 }
 
-.accordion-tabs li{
+.accordion-tabs li {
   padding: 10px 15px;
-  border-left: 1px solid #F2F2F2;
-  border-right: 1px solid #F2F2F2;
-  border-top: 1px solid #F2F2F2;
+  border: 1px solid #fff;
   border-bottom: 1px solid #D1D2D3;
   background: #F2F2F2;
   cursor: pointer;
   display: inline-block;
-  width: 192px;
+  margin-left: -3px;
+  width: 193px;
   
 }
 
-.tab-content.active{
-  background: #fff;
-  border: 1px solid #D1D2D3;
-  border-top: none;
-  display: block;
+
+.tab-text {
+  margin-left: 30px;
 }
 
+.article-line.tab-line {
+  border-bottom: 1px solid #D1D2D3;
+  margin-top: -5px;
+  width: 95%;
+}
+
+
 @media screen and (max-width: 825px) {
+  .article-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-tag {
+    width: 100%;
+    height: 200px;
+  }
+
+  .article-line.article-head {
+    width: 90px;
+    margin-top: 10px;
+  }
+
   .accordion-tabs li {
     display: block;
     width: 100%;
-    border: none;
+    /*border: none;*/
     margin-bottom: 1px;
   }
   .tab-content {
     width: 100%;
     position: static;
+    padding: 0px;
+    padding-top: 15px;
   }
   .tab-content.active{
     border: none;
+    flex-direction: column;
   }
-  .accordion-tabs li.active{
-    border: none;  
+
+  .tab-text {
+    margin-left: 0px;
+  }
+
+
+  .accordion-tabs li{
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img-tag {
+    height: 150px;
   }
 }
