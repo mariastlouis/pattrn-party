@@ -348,7 +348,7 @@ img.flex-img {
   flex-direction: column;
   width: 100%;
   background-color: #e1e2e3;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .nav-text {
