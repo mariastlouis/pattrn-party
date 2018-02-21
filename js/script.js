@@ -13,5 +13,10 @@ function setTab () {
   $(`.plus-minus-${liId}`).text('-')
 }
 
+function showMenu () {
+  $('.nav-bar').toggleClass('hide-mobile')
+}
 
 $('.tab-head').on('click', setTab)
+
+$('.menu').on('click', showMenu)
